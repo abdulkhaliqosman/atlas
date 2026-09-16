@@ -18,9 +18,10 @@ AddressSanitizer and UBSan are on by default; configure with `-DATLAS_SANITIZE=O
 
 | Directory | Holds |
 | --- | --- |
-| `core/` | Math and profiling |
-| `imaging/` | Image storage, views and processing |
-| `tools/` | Week-by-week experiment programs |
-| `tests/` | doctest unit tests, one file per topic |
+| `core/` | Shared math and profiling code, reused across weeks |
+| `imaging/` | Shared image storage, views and processing, reused across weeks |
+| `tests/` | Tests for shared code |
 | `assets/` | Small deterministic test inputs |
-| `evidence/` | Weekly evidence records: predictions, results, test output, captures, notes. See the curriculum's `Guideline_Atlas_Evidence.md` |
+| `Semester_XX/Week_XX/` | Everything only that week needs: experiment programs, their tests, notes |
+
+Code starts in its week folder. It moves to `core/` or `imaging/` once a later week needs it.

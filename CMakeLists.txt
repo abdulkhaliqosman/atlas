@@ -31,7 +31,16 @@ FetchContent_MakeAvailable(doctest)
 
 enable_testing()
 
+function(atlas_add_test name)
+  add_executable(${name} ${ARGN})
+  target_link_libraries(${name} PRIVATE doctest::doctest_with_main atlas_warnings)
+  add_test(NAME ${name} COMMAND ${name})
+endfunction()
+
+# Shared engine code, reused across weeks.
 add_subdirectory(core)
 add_subdirectory(imaging)
-add_subdirectory(tools)
 add_subdirectory(tests)
+
+# Week-specific experiments and their tests.
+add_subdirectory(Semester_01/Week_01)

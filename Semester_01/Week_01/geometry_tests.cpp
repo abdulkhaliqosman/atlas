@@ -1,5 +1,5 @@
-// CVIP 501A Week 1 checks. Expected values come from your hand predictions,
-// not from re-running the implementation. See assignment section 5.
+// CVIP 501A Week 1 checks. Expected values come from the maths,
+// not from re-running the implementation. See the assignment's acceptance criteria.
 
 #include <doctest/doctest.h>
 

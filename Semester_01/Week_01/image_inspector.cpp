@@ -1,5 +1,4 @@
 // CVIP 502A Week 1: Image Memory Inspector.
-// Record your predictions in the evidence record before running this program.
 
 #include <opencv2/imgcodecs.hpp>
 
