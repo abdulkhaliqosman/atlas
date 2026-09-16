@@ -1,0 +1,5 @@
+add_executable(week01_geometry_playground week01_geometry_playground.cpp)
+target_link_libraries(week01_geometry_playground PRIVATE atlas::core atlas_warnings)
+
+add_executable(week01_image_inspector week01_image_inspector.cpp)
+target_link_libraries(week01_image_inspector PRIVATE atlas::imaging ${OpenCV_LIBS} atlas_warnings)
